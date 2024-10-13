@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        .heading{
+            font-size: 30px;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+        }
+        .author{
+            margin: 0px;
+            position: absolute;
+            color: white;
+            bottom: 0px;
+            height: 40px;
+            width: 100%;
+            border-bottom-right-radius:15px ;
+            border-bottom-left-radius: 15px;
+            text-align: center;
+            background-color:rgba(0, 0, 0, 0.6);
+            display: none;
+            z-index: 1;
+            transform: scale(1.06);
+        }
+        .maindiv{
+            display: grid;
+            grid-template-columns:repeat(4,350px) ;
+            gap: 25px;
+
+        }
+        .image{
+            width: 100%;
+            border-radius: 5%;
+        }
+        .photos{
+            position: relative;
+            width: 350px;
+            border-radius: 5%;
+        
+        }
+        .photos:hover{
+            transform:translateY(-10px)
+        }
+        .photos:hover img{
+            transform: scale(1.06);
+        }
+        .photos:hover .author{
+            display: block;
+           
+        }
+    </style>
+</head>
+<body>
+    <script src="./task3.js"></script>
+</body>
+</html>
